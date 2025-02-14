@@ -36,7 +36,7 @@
         group: root
         mode: '0644'
       notify: Restart NFS
-  when: pulsar_role == 'front'
+  when: pulsar_type_of_node == 'front'
 
 # Tasks for worker nodes
 - block:
@@ -58,4 +58,4 @@
         group: root
         mode: '0644'
       notify: Restart autofs
-  when: pulsar_role == 'wn'
+  when: pulsar_type_of_node == 'wn'

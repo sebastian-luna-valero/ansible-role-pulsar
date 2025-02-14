@@ -1,5 +1,5 @@
 # valid values: front, wn
-pulsar_role: front
+pulsar_type_of_node: front
 
 # RabbitMQ credentials for pulsar
 pulsar_user: changeme
