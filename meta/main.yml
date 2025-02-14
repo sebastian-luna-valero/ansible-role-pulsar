@@ -19,4 +19,4 @@ galaxy_info:
     - lrms
     - pulsar
 dependencies:
-  - { role: 'grycap.htcondor', htcondor_type_of_node: "{{ pulsar_node }}" }
+  - { role: 'grycap.htcondor', htcondor_type_of_node: "{{ pulsar_type_of_node }}" }
