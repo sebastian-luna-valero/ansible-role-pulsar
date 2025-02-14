@@ -1,0 +1,6 @@
+# valid values: front, wn
+pulsar_role: front
+
+# RabbitMQ credentials for pulsar
+pulsar_user: changeme
+pulsar_password: changeme

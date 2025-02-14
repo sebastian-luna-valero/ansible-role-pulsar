@@ -1,0 +1,3 @@
+{% for host in groups['lrms_server'] %}
+share -rw,hard,intr,nosuid,quota {{ ansible_facts['eth0']['ipv4']['address'] }}:/data/share
+{% endfor %}

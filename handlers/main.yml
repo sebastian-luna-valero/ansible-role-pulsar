@@ -1,0 +1,19 @@
+---
+
+- name: Restart autofs
+  ansible.builtin.service:
+    name: autofs.service
+    state: restarted
+    enabled: true
+
+- name: Restart Pulsar
+  ansible.builtin.service:
+    name: pulsar.service
+    state: restarted
+    enabled: true
+
+- name: Restart NFS
+  ansible.builtin.service:
+    name: nfs-server
+    state: restarted
+    enabled: true
