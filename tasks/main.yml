@@ -58,4 +58,4 @@
         group: root
         mode: '0644'
       notify: Restart autofs
-  when: pulsar_role == 'wm'
+  when: pulsar_role == 'wn'
