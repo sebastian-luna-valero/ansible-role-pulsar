@@ -1,8 +1,3 @@
 ---
-- name: Tasks for the head node
+- name: Tasks for each node type
   include_tasks: "{{ pulsar_type_of_node }}.yml"
-  when: pulsar_type_of_node == 'front'
-
-- name: Tasks for worker nodes
-  include_tasks: "{{ wn }}.yml"
-  when: pulsar_type_of_node == 'wn'
